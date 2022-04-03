@@ -1,1 +1,6 @@
-#  1. Поработайте с переменными, создайте несколько, выведите на экран. Запросите у пользователя некоторые числа и строки и сохраните в переменные, затем выведите на экран.
+name = input('Enter your name: ')
+print('Hello, ' + name + '!')
+
+year_of_birth = int(input('Enter your year of birth:'))
+year = int(input('Enter your current year:'))
+print('Your age: ' + str(year - year_of_birth) + ', or will be this year!')
