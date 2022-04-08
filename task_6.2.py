@@ -6,7 +6,7 @@ user_input = input('Введите через пробел характерис�
 while user_input != 'done':
     user_input = user_input.split()
     input_dict.update({user_input[0]: user_input[1:]})
-    print(input_dict)
+    #print(input_dict)
     user_input = input('Введите через пробел характеристику и список значений или \"done\" для зовершения:')
 
 final_list = []

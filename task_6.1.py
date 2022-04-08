@@ -1,18 +1,12 @@
-user_input = input('Введите названия товаров через пробел:').split()
-input_dict = {'Название': user_input}
-print(input_dict)
+# test_input = {'название': ['компьютер', 'принтер', 'сканер'], 'цена': [20000, 6000, 2000], 'количество': [5, 2, 7], 'ед': ['шт.', 'шт.', 'шт.']}
 
-user_input = input('Введите цену товаров через пробел:').split()
-input_dict.update({'Цена': user_input})
-print(input_dict)
+char_list = ('Название', 'Цена', 'Количество', 'Ед.')
+input_dict = {}
 
-user_input = input('Введите количество товаров через пробел:').split()
-input_dict.update({'Количество': user_input})
-print(input_dict)
-
-user_input = input('Введите единицы измерения товаров через пробел:').split()
-input_dict.update({'ед.': user_input})
-print(input_dict)
+for ch in range(0, len(char_list)):
+    user_input = input(f'Введите список значений характеристики {char_list[ch]} для всех товаров через пробел:').split()
+    input_dict.update({char_list[ch]: user_input})
+    #print(input_dict)
 
 final_list = []
 key_list = list(input_dict.keys())
